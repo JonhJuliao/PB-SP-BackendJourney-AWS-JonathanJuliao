@@ -37,8 +37,10 @@ public class Main {
             int answer = sc.nextInt();
             sc.nextLine();
             if(answer == answers[i]){
+                System.out.println("Great, you're right!");
                 right++;
             }else{
+                System.out.println("Sorry, you're wrong!");
                 wrong++;
             }
         }

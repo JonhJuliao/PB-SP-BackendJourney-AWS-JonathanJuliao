@@ -12,7 +12,7 @@ public class Main {
      * 1. Create an array of employees
      * 2. Print their names, salaries, bonus or discounts and liquid salaries
      */
-    private static void createEmployees() {
+    public static void createEmployees() {
         Scanner sc = new Scanner(System.in);
         System.out.println("How many employees do you want to register?");
         int amountEmp = sc.nextInt();

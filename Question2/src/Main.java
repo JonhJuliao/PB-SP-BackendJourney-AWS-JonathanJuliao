@@ -8,6 +8,7 @@ public class Main {
         System.out.println("Write a message with a Emotion: ");
         System.out.println("You can use :-) or :-(");
         String message = sc.nextLine();
+
         for(int i = 0; i < message.length(); i++){
             if(message.charAt(i) == ':'){ //Compara se o caractere é igual a ":"
                 if(i <= (message.length() - 2)){ //Isso é para evitar indexOutOfRange
