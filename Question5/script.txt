@@ -1,0 +1,18 @@
+{
+    "name"     : "Jonathan Julião",
+    "age"      : 27,
+    "phone"    : "(87) 99999-9999",
+    "height"   : 1.68,
+    "email"    : "jonathan@gmail.com",
+    "cpf"      : "000.111.222-33",
+    "birthday" : "15/06/1995",
+    "address"  : {
+        "zip"          : "55555-555",
+        "Street"       : "Rua Qualquer",
+        "complement"   : "Apartamento",
+        "neighborhood" : "Bairro Por Ai",
+        "City"         : "Recife",
+        "State"        : "Pernambuco",
+        "Country"      : "Brasil"
+    }
+}
