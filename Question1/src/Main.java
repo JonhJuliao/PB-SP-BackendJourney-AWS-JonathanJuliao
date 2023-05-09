@@ -2,6 +2,17 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        createEmployees();
+    }
+
+    /**
+     * Function name: createEmployees
+     *
+     * Inside the function:
+     * 1. Create an array of employees
+     * 2. Print their names, salaries, bonus or discounts and liquid salaries
+     */
+    private static void createEmployees() {
         Scanner sc = new Scanner(System.in);
         System.out.println("How many employees do you want to register?");
         int amountEmp = sc.nextInt();
@@ -25,21 +36,23 @@ public class Main {
             if(employee.getSalary() <= 1000){
                 double bonus = employee.getSalary() * 0.20;
                 double liquidSalary = employee.getSalary() + bonus;
-                System.out.println("Bonus: " + bonus);
-                System.out.println("Liquid salary: " + liquidSalary);
+                System.out.println("Bonus: R$" + bonus);
+                System.out.println("Liquid salary: R$" + liquidSalary);
             } else if (employee.getSalary() > 2000) {
                 double discount = employee.getSalary() * 0.10;
                 double liquidSalary = employee.getSalary() - discount;
-                System.out.println("Discount: " + discount);
-                System.out.println("Liquid salary: " + liquidSalary);
+                System.out.println("Discount: R$" + discount);
+                System.out.println("Liquid salary: R$" + liquidSalary);
             }
             else{
                 double bonus = employee.getSalary() * 0.10;
                 double liquidSalary = employee.getSalary() + bonus;
-                System.out.println("Bonus: " + bonus);
-                System.out.println("Liquid salary: " + liquidSalary);
+                System.out.println("Bonus: R$" + bonus);
+                System.out.println("Liquid salary: R$" + liquidSalary);
             }
             System.out.println();
         }
     }
+
+
 }

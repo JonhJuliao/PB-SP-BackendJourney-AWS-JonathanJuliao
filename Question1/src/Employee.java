@@ -24,10 +24,16 @@ public class Employee {
         this.salary = salary;
     }
 
+    /**
+     * Function name: toString
+     *
+     * Inside the function:
+     * 1. @return the name and the salary of an employee (String)
+     */
     @Override
     public String toString() {
         return
                 "Name:" + name +
-                        "\nSalary:" + salary;
+                        "\nSalary: R$" + salary;
     }
 }
