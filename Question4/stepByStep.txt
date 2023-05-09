@@ -1,0 +1,5 @@
+In pgAdmin 4 I created a Database called challenge#1
+
+In this database I opened a Query tool
+
+After that, I just followed what I write in the script document
