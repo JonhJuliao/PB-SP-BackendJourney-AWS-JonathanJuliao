@@ -1,0 +1,9 @@
+In this folder I put two script.
+The first one is more readble, so you can read and evaluate me.
+The second one is an import file, is the same script, but is after than I use a minify text app.
+
+For this question challenge I used the Studio 3T
+
+The ID (Object) is created automatically.
+
+If you want to create a document with others informations, you just need change the information after the ":"
