@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -17,6 +18,9 @@ public class Main {
         System.out.println("How many employees do you want to register?");
         int amountEmp = sc.nextInt();
         sc.nextLine();
+        if(amountEmp < 0) {
+            throw new NumberFormatException("Invalid number format!");
+        }
         Employee[] dataEmp = new Employee[amountEmp];
 
         for(int i = 0; i < amountEmp; i++){
@@ -26,7 +30,7 @@ public class Main {
             double salary = sc.nextDouble();
             sc.nextLine();
             if(salary < 0){
-                throw new RuntimeException("The salary cannot be negative");
+                throw new NumberFormatException("The salary cannot be negative");
             }
             dataEmp[i] = new Employee(name, salary);
             System.out.println();
