@@ -1,7 +1,11 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         int right = 0;
         int wrong = 0;
         String [] questions = new String[10];
@@ -26,8 +30,9 @@ public class Main {
         answers[8] = 10;
         questions[9] = "What is the product of 121 x 0 x 20 x 2.5?";
         answers[9] = 0;
+
         Scanner sc = new Scanner(System.in);
-        System.out.println("Welcomer to the Math Quiz!");
+        System.out.println("Welcome to the Math Quiz!");
         System.out.println("You will answer 10 basic math questions! Your answer must be a number, don't write any word");
         System.out.println("First say your name:");
         String name = sc.nextLine();
